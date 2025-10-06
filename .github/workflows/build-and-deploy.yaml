@@ -18,6 +18,9 @@ jobs:
   set-env:
     name: Set Environment Variables
     runs-on: ubuntu-latest
+    ## To get the secrets, you need to set them up in the repo settings
+    ## https://docs.github.com/en/actions/security-guides/encrypted-secrets
+    environment: AZDeploy
     outputs:
       version: ${{ steps.main.outputs.version }}
       created: ${{ steps.main.outputs.created }}
