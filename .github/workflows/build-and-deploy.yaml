@@ -103,7 +103,7 @@ jobs:
         uses: azure/CLI@v1
         with:
           inlineScript: |
-            az group create -g ${{ secrets.RESOURCE_GROUP }} -l canadacentral
+            az group create -g ${{ secrets.RESOURCE_GROUP }} -l eastus
             az deployment group create -g ${{ secrets.RESOURCE_GROUP }} -f ./deploy/main.bicep \
              -p \
                 minReplicas=0 \
@@ -116,4 +116,4 @@ jobs:
                 containerRegistry=${{ env.REGISTRY }} \
                 containerRegistryUsername=${{ github.actor }} \
                 containerRegistryPassword=${{ secrets.GITHUB_TOKEN }} \
-                deployApim=false
+                deployApim=true
