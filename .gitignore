@@ -9,3 +9,4 @@ go-service/container-go-hello-mux
 .tye/
 OIDC_SETUP.md
 DAPR_PROVIDER_SETUP.md
+APIM_SOFTDELETE_RESOLUTION.md
