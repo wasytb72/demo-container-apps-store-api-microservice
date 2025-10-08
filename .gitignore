@@ -8,3 +8,4 @@ node_modules/
 go-service/container-go-hello-mux
 .tye/
 OIDC_SETUP.md
+DAPR_PROVIDER_SETUP.md
